@@ -1,0 +1,376 @@
+/*============================================*/
+/*Global Styling*/
+/*============================================*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: raleway;
+  font: 12px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decorations: none !important;
+  color: #02b4cc;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.el-center-align {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title {
+  width: 80%;
+  height: 50px;
+  border-bottom: 1px solid;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+/*Footer Section*/
+.footer {
+  display: flex;
+  background: black;
+  align-items: center;
+  padding: 15px;
+  color: #02b4cc;
+  width: 100%;
+}
+
+/*============================================*/
+/*Index Page Styling*/
+/*============================================*/
+
+/*Navbar*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  opacity: 0;
+  height: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: 0.25s;
+  z-index: 1;
+}
+
+.nav-hamburger {
+  position: fixed;
+  top: 10px;
+  text-align: right;
+  right: 10px;
+  color: #02b4cc;
+}
+
+.nav-items {
+  margin: 5px 20px 5px 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #02b4cc;
+  font-family: raleway;
+  transition: color 0.5s ease-out;
+}
+
+.nav-function {
+  opacity: 1;
+  top: 0;
+  background-color: black;
+  height: 55px;
+}
+
+a:hover {
+  color: white;
+  border-bottom-color: white;
+}
+
+i {
+  margin-right: 10px;
+}
+
+/*Landing Styling*/
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../images/markus-spiske-221494.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: #d8d4d4;
+}
+
+.landing-content {
+  width: 96%;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.landing-line-1 {
+  padding-left: 3%;
+}
+
+.landing-line-2 {
+  text-align: center;
+}
+
+.landing-line-3 {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.text-highlight {
+  color: rgb(64, 173, 196);
+}
+
+/*About Section*/
+.about {
+  padding: 5% 2% 5% 2%;
+  background-color: black;
+  min-height: 400px;
+  color: #d8d4d4;
+}
+
+section p.about-left {
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+  padding-right: 2%;
+}
+
+section div.about-middle {
+  flex-basis: 33.33%;
+}
+
+section div.about-right {
+  flex-basis: 33.33%;
+}
+
+/*Work Section - Index Page*/
+
+.work {
+  padding: 5% 2% 5% 2%;
+  /*background-color: rgb(64, 173, 196);
+	width: 100%;*/
+  background-image: url(../images/96e2da86.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Work Carousel Elements*/
+.slide {
+  width: 75%;
+  margin: 0 auto;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+/*Contact Section*/
+.contact {
+  padding: 5% 2% 5% 2%;
+}
+
+.contact-grid {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 2%;
+}
+
+/*============================================*/
+/*Work Page*/
+/*============================================*/
+
+#work-page-header {
+  width: 100%;
+}
+
+#navbar-work {
+  height: 70px;
+  opacity: 1;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+}
+
+.navbar-brand {
+  height: 100%;
+  align-items: center;
+}
+
+#work-page-container {
+  margin-top: 70px;
+  width: 100%;
+  padding: 0 15px;
+  background-image: url(../images/96e2da86.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.row {
+}
+
+.work-card {
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  height: 350px;
+  display: table;
+  position: relative;
+}
+
+.work-card-overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  padding-top: 155px;
+  position: absolute;
+}
+
+.info-sign {
+  margin: 0;
+}
+
+.info-sign:hover {
+  color: #02b4cc;
+  transition: 0.25s linear;
+}
+
+.work-card-description {
+  z-index: 2;
+  color: white;
+  position: relative;
+  text-align: center;
+  display: none;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.description-fade {
+  display: table-cell;
+  animation: workcarddescriptionfade 1.5s forwards;
+}
+
+@keyframes workcarddescriptionfade {
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.codepen-git-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+
+#git-card {
+  background-color: #24292e;
+  color: white;
+}
+
+/*============================================*/
+/*Shared Media Queries*/
+/*============================================*/
+
+@media screen and (max-width: 920px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  a {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section .landing-content {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-items {
+    font-size: 22px;
+  }
+  .nav-function {
+    height: 300px;
+  }
+  .contact-element {
+    padding: 2% 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  section .landing-content {
+    font-size: 35px;
+  }
+  section div.grid {
+    flex-direction: column;
+  }
+  .slide {
+    width: 100%;
+  }
+}

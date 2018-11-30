@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Score Keeper</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Codystar|Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+
+<!-- Scoreboard and Add Score Section -->
+<div class="container" id="containerOne">
+	<h1 class="display" id="scoreboardDisplay">SCOREBOARD</h1>
+	<div class="row rowStyle">
+		<div class="col-md-5 display">
+			<h2>
+				<span class="playerTextDisplay">Player 1</span>
+			</h2>
+			<h2>
+				<span id="p1Display">0</span>
+			</h2>
+			<button id="player1Button">Add Point</button>
+		</div>
+		<div class="col-md-2 display">
+			<h2>
+				vs
+			</h2>
+			<br>
+			<button id="resetButton">Reset</button>
+		</div>
+		<div class="col-md-5 display">
+			<h2>
+				<span class="playerTextDisplay">Player 2</span>
+			</h2>
+			<h2>
+				<span id="p2Display">0</span>
+			</h2>
+			<button id="player2Button">Add Point</button>
+		</div>
+	</div>
+</div>
+
+<!-- Max Score and Reset Button Section -->
+<div class="container display" id="containerTwo">
+	<p>Playing to: <span id="winningScoreDisplay"></span></p>
+	<input type="number">
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

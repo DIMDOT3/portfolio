@@ -1,0 +1,57 @@
+.winner {
+	color: green;
+}
+
+#containerOne {
+	background: black;
+	width: 70%;
+	margin-top: 12%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#containerTwo {
+	background: rgb(40, 40, 40);
+	width: 70%;
+	margin-bottom: 12%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.display {
+	text-align: center;
+	background: black;
+	font-family: 'Press Start 2P', cursive;
+	color: red;
+	border: 2px solid gray;
+}
+
+#p1Display, #p2Display {
+	padding: 5%;
+	font-family: 'Press Start 2P', cursive;
+	color: red;
+	font-size: 5em;
+}
+
+.playerTextDisplay {
+	padding: 5%;
+	font-family: 'Press Start 2P', cursive;
+	color: red;
+}
+
+.rowStyle {
+	padding: 2% 2% 2% 2%;
+}
+
+#scoreboardDisplay {
+	width: 50%;
+	padding: 1%;
+	margin: 2% auto;
+}
+
+body {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/d9/53/f0/d953f00e555f7d5a628603e9bbe35f71.jpg");
+	background-attachment: fixed;
+}
