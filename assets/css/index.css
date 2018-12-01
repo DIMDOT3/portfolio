@@ -44,7 +44,7 @@ img {
 }
 
 .section-title {
-  width: 30%;
+  width: 50%;
   text-align: center;
   height: 50px;
   border-bottom: 1px solid;
@@ -333,6 +333,12 @@ section div.about-skills {
 /*Shared Media Queries*/
 /*============================================*/
 
+@media (max-width: 1024px) {
+  section .landing-content {
+    font-size: 70px;
+  }
+}
+
 @media screen and (max-width: 920px) {
   nav {
     justify-content: space-around;
@@ -340,12 +346,6 @@ section div.about-skills {
 
   a {
     font-size: 25px;
-  }
-}
-
-@media (max-width: 1024px) {
-  section .landing-content {
-    font-size: 70px;
   }
 }
 
@@ -385,5 +385,11 @@ section div.about-skills {
   }
   .slide {
     width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .landing {
+    height: 100vh;
   }
 }
