@@ -9,8 +9,8 @@ body {
   margin: 0;
   font-family: raleway;
   font: 12px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 p {
@@ -44,7 +44,8 @@ img {
 }
 
 .section-title {
-  width: 80%;
+  width: 30%;
+  text-align: center;
   height: 50px;
   border-bottom: 1px solid;
 }
@@ -52,6 +53,16 @@ img {
 .grid {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
@@ -83,7 +94,7 @@ nav {
   position: fixed;
   width: 100%;
   transition: 0.25s;
-  z-index: 1;
+  z-index: 4;
 }
 
 .nav-hamburger {
@@ -92,6 +103,7 @@ nav {
   text-align: right;
   right: 10px;
   color: #02b4cc;
+  z-index: 3;
 }
 
 .nav-items {
@@ -123,7 +135,7 @@ i {
 .landing {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: url(../images/markus-spiske-221494.jpg);
@@ -136,22 +148,12 @@ i {
 }
 
 .landing-content {
-  width: 96%;
-  font-size: 80px;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 .landing-line-1 {
   padding-left: 3%;
-}
-
-.landing-line-2 {
-  text-align: center;
-}
-
-.landing-line-3 {
-  text-align: right;
-  padding-right: 3%;
 }
 
 .text-highlight {
@@ -166,26 +168,37 @@ i {
   color: #d8d4d4;
 }
 
-section p.about-left {
-  flex-basis: 33.33%;
-  flex-wrap: wrap;
-  padding-right: 2%;
+section p.about-text {
+  text-align: center;
+  padding: 25px 15% 25px 15%;
 }
 
-section div.about-middle {
-  flex-basis: 33.33%;
+section div.about-skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-section div.about-right {
-  flex-basis: 33.33%;
+.list-group {
+  width: 30%;
 }
+
+.list-group-header {
+  color: #02b4cc;
+}
+
+.list-group-item {
+  background-color: black;
+  color: white;
+}
+*/
 
 /*Work Section - Index Page*/
 
 .work {
   padding: 5% 2% 5% 2%;
-  /*background-color: rgb(64, 173, 196);
-	width: 100%;*/
+  background-color: rgb(64, 173, 196);
+  width: 100%;
   background-image: url(../images/96e2da86.png);
   background-position: center;
   background-size: cover;
@@ -208,12 +221,12 @@ section div.about-right {
 /*Contact Section*/
 .contact {
   padding: 5% 2% 5% 2%;
+  background-color: #f3f1f0;
 }
 
-.contact-grid {
-  justify-content: space-between;
-  align-items: center;
-  padding: 2% 2%;
+.social-media-icons {
+  width: 100%;
+  text-align: center;
 }
 
 /*============================================*/
@@ -245,9 +258,6 @@ section div.about-right {
   background-image: url(../images/96e2da86.png);
   background-position: center;
   background-size: cover;
-}
-
-.row {
 }
 
 .work-card {
@@ -356,6 +366,9 @@ section div.about-right {
   }
   .contact-element {
     padding: 2% 2%;
+  }
+  .landing {
+    height: 60vh;
   }
 }
 
