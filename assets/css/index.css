@@ -189,14 +189,11 @@ section div.about-skills {
 }
 
 .card-header {
-  padding: 0;
+  padding: 0.5rem;
+  background-color: #17a2b8;
 }
 
 /*Work Section */
-
-section.test {
-  background-color: green;
-}
 
 #work-section {
   padding: 5% 2% 5% 2%;
