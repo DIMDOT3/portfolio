@@ -11,6 +11,10 @@ body {
   font: 12px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  background-image: url(../images/96e2da86.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 p {
@@ -179,85 +183,25 @@ section div.about-skills {
   width: 100%;
 }
 
-.list-group {
-  width: 30%;
+.accordion {
+  width: 55%;
+  color: black;
 }
 
-.list-group-header {
-  color: #02b4cc;
+.card-header {
+  padding: 0;
 }
 
-.list-group-item {
-  background-color: black;
-  color: white;
+/*Work Section */
+
+section.test {
+  background-color: green;
 }
-*/
 
-/*Work Section - Index Page*/
-
-.work {
+#work-section {
   padding: 5% 2% 5% 2%;
-  background-color: rgb(64, 173, 196);
   width: 100%;
-  background-image: url(../images/96e2da86.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   color: white;
-}
-
-/* Work Carousel Elements*/
-.slide {
-  width: 75%;
-  margin: 0 auto;
-}
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  right: 0;
-  left: 0;
-}
-
-/*Contact Section*/
-.contact {
-  padding: 5% 2% 5% 2%;
-  background-color: #f3f1f0;
-}
-
-.social-media-icons {
-  width: 100%;
-  text-align: center;
-}
-
-/*============================================*/
-/*Work Page*/
-/*============================================*/
-
-#work-page-header {
-  width: 100%;
-}
-
-#navbar-work {
-  height: 70px;
-  opacity: 1;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  padding: 8px 15px;
-}
-
-.navbar-brand {
-  height: 100%;
-  align-items: center;
-}
-
-#work-page-container {
-  margin-top: 70px;
-  width: 100%;
-  padding: 0 15px;
-  background-image: url(../images/96e2da86.png);
-  background-position: center;
-  background-size: cover;
 }
 
 .work-card {
@@ -322,11 +266,23 @@ section div.about-skills {
   justify-content: center;
   background-color: white;
   width: 100%;
+  color: black;
 }
 
 #git-card {
   background-color: #24292e;
   color: white;
+}
+
+/*Contact Section*/
+.contact {
+  padding: 5% 2% 5% 2%;
+  background-color: #f3f1f0;
+}
+
+.social-media-icons {
+  width: 100%;
+  text-align: center;
 }
 
 /*============================================*/
